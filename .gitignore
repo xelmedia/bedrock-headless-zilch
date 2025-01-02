@@ -3,6 +3,7 @@ web/app/plugins/*
 !web/app/plugins/.gitkeep
 web/app/mu-plugins/*/
 web/app/themes/twentytwentyfive/
+web/app/themes/wp-headless-theme
 web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
@@ -26,3 +27,4 @@ auth.json
 
 # WP-CLI
 wp-cli.local.yml
+.idea/
