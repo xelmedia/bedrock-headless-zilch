@@ -28,6 +28,10 @@
       "type": "composer",
       "url": "https://wpackagist.org",
       "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+    },
+     {
+        "type": "vcs",
+        "url": "https://github.com/aderaaij/wp-headless-theme"
     }
   ],
   "require": {
@@ -40,7 +44,7 @@
     "roots/wordpress": "6.7.1",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.2.0",
-    "wpackagist-theme/twentytwentyfive": "^1.0"
+    "aderaaij/wp-headless-theme": "*"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
