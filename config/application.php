@@ -36,8 +36,8 @@ $webroot_dir = $root_dir . '/web';
  */
 if (file_exists($root_dir . '/.env')) {
     $env_files = file_exists($root_dir . '/.env.local')
-        ? ['.env', '.env.local']
-        : ['.env'];
+        ? ['.env', '.env.local', '.env.zilch']
+        : ['.env', '.env.zilch'];
 
     $repository = Dotenv\Repository\RepositoryBuilder::createWithNoAdapters()
         ->addAdapter(Dotenv\Repository\Adapter\EnvConstAdapter::class)
@@ -122,11 +122,22 @@ Config::define('NONCE_SALT', env('NONCE_SALT'));
 Config::define('AUTOMATIC_UPDATER_DISABLED', true);
 Config::define('DISABLE_WP_CRON', env('DISABLE_WP_CRON') ?: false);
 
+
+//Custom Zilch settings:
+Config::define('ZILCH_PRODUCTION_HOST', env('ZILCH_PRODUCTION_HOST'));
+Config::define('ZILCH_STAGING_HOST', env('ZILCH_STAGING_HOST'));
+Config::define('ZILCH_GATEWAY_HOST', env('ZILCH_GATEWAY_HOST'));
+Config::define('ZILCH_CLIENT_SECRET', env('ZILCH_CLIENT_SECRET'));
+
+
+//Set default theme to headless wp
+Config::define('WP_DEFAULT_THEME', 'wp-headless-theme');
+
 // Disable the plugin and theme file editor in the admin
 Config::define('DISALLOW_FILE_EDIT', true);
 
 // Disable plugin and theme updates and installation from the admin
-Config::define('DISALLOW_FILE_MODS', true);
+Config::define('DISALLOW_FILE_MODS', false);
 
 // Limit the number of post revisions
 Config::define('WP_POST_REVISIONS', env('WP_POST_REVISIONS') ?? true);
