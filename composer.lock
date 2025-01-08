@@ -4,56 +4,16 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6e7fdbd32e9b936a69563d3c725e462f",
+    "content-hash": "583726a4a0ba2279237ae4935e166ebe",
     "packages": [
         {
             "name": "aderaaij/wp-headless-theme",
-            "version": "1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/xelmedia/wp-headless-theme.git",
-                "reference": "1d149d621f4680a80d763be3f29e0cd6ee73ec19"
-            },
+            "version": "dev-latest",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xelmedia/wp-headless-theme/zipball/1d149d621f4680a80d763be3f29e0cd6ee73ec19",
-                "reference": "1d149d621f4680a80d763be3f29e0cd6ee73ec19",
-                "shasum": ""
+                "url": "https://github.com/xelmedia/wp-headless-theme/archive/refs/tags/1.0.zip"
             },
-            "require": {
-                "php": ">=8.1"
-            },
-            "type": "wordpress-theme",
-            "autoload": {
-                "psr-4": {
-                    "App\\": "app/"
-                }
-            },
-            "scripts": {
-                "lint": [
-                    "phpcs --ignore=index.php,vendor,resources,storage,dist --extensions=php --standard=PSR12 ."
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Arden de Raaij",
-                    "email": "a.de.raaij@gmail.com",
-                    "homepage": "https://arden.nl"
-                }
-            ],
-            "description": "WordPress starter theme with a modern development workflow",
-            "homepage": "https://github.com/aderaaij/wp-headless-theme",
-            "keywords": [
-                "wordpress"
-            ],
-            "support": {
-                "issues": "https://github.com/aderaaij/wp-headless-theme/issues",
-                "source": "https://github.com/xelmedia/wp-headless-theme/tree/1.0"
-            },
-            "time": "2025-01-02T13:51:09+00:00"
+            "type": "library"
         },
         {
             "name": "composer/installers",
@@ -265,69 +225,12 @@
         },
         {
             "name": "kameleon/kameleon-assistant-plugin",
-            "version": "1.4.4.592",
-            "source": {
-                "type": "git",
-                "url": "https://gitlab.xel.nl/chameleon/kameleon-assistant-plugin.git",
-                "reference": "7eee995db385be91082507b9e8dc09a4736402a3"
+            "version": "dev-latest",
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.xel.nl/chameleon/kameleon-assistant-plugin/-/archive/latest/kameleon-assistant-plugin-latest.zip"
             },
-            "require": {
-                "ext-curl": "*",
-                "ext-dom": "*",
-                "ext-libxml": "*",
-                "ext-mbstring": "*",
-                "ext-zip": "*",
-                "php": ">=8.1"
-            },
-            "require-dev": {
-                "10up/wp_mock": "^1.0.0",
-                "johnpbloch/wordpress": "^6.6",
-                "phpunit/phpunit": "^9.6",
-                "squizlabs/php_codesniffer": "^3.10",
-                "wp-coding-standards/wpcs": "^3.1"
-            },
-            "type": "wordpress-plugin",
-            "autoload": {
-                "psr-4": {
-                    "Zilch\\Assistant\\": "src/assets/php"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Zilch\\Assistant\\": "test/php",
-                    "Zilch\\Assistant\\Mocks\\": "test/php/mock"
-                }
-            },
-            "scripts": {
-                "release": [
-                    "resources/composer install --no-dev && /bin/sh ./release-zip.sh zilch-assistant"
-                ],
-                "test": [
-                    "XDEBUG_MODE=coverage vendor/bin/phpunit -c resources/phpunit.xml"
-                ],
-                "install-auth0": [
-                    "/bin/bash ./scripts/auth0-install.sh"
-                ],
-                "lint-report": [
-                    "vendor/bin/phpcs --report=junit --report-file=reports/php-lint.xml src/ -n -p --standard=WordPress"
-                ],
-                "lint": [
-                    "vendor/bin/phpcs src/ -n -p --standard=WordPress"
-                ],
-                "lint-fix": [
-                    "vendor/bin/phpcbf src/ -p --standard=WordPress"
-                ]
-            },
-            "license": [
-                "GPL-3.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "xel"
-                }
-            ],
-            "description": "WordPress plugin for managing Zilch websites",
-            "time": "2024-12-24T14:04:08+00:00"
+            "type": "library"
         },
         {
             "name": "oscarotero/env",

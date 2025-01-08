@@ -29,13 +29,27 @@
       "url": "https://wpackagist.org",
       "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
     },
-     {
-        "type": "vcs",
-        "url": "https://github.com/xelmedia/wp-headless-theme"
+    {
+      "type": "package",
+      "package": {
+        "name": "aderaaij/wp-headless-theme",
+        "version": "dev-latest",
+        "dist": {
+          "url": "https://github.com/xelmedia/wp-headless-theme/archive/refs/tags/1.0.zip",
+          "type": "zip"
+        }
+      }
     },
     {
-      "type": "vcs",
-      "url": "https://gitlab.xel.nl/chameleon/kameleon-assistant-plugin.git"
+      "type": "package",
+      "package": {
+        "name": "kameleon/kameleon-assistant-plugin",
+        "version": "dev-latest",
+        "dist": {
+          "url": "https://gitlab.xel.nl/chameleon/kameleon-assistant-plugin/-/archive/latest/kameleon-assistant-plugin-latest.zip",
+          "type": "zip"
+        }
+      }
     }
   ],
   "require": {
