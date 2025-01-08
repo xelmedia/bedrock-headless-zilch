@@ -37,7 +37,8 @@
         "dist": {
           "url": "https://github.com/xelmedia/wp-headless-theme/archive/refs/tags/1.0.zip",
           "type": "zip"
-        }
+        },
+        "type": "wordpress-theme"
       }
     },
     {
@@ -48,7 +49,8 @@
         "dist": {
           "url": "https://gitlab.xel.nl/chameleon/kameleon-assistant-plugin/-/archive/latest/kameleon-assistant-plugin-latest.zip",
           "type": "zip"
-        }
+        },
+        "type": "wordpress-plugin"
       }
     }
   ],
@@ -62,8 +64,8 @@
     "roots/wordpress": "*",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.2.0",
-    "aderaaij/wp-headless-theme": "*",
-    "kameleon/kameleon-assistant-plugin": "*"
+    "kameleon/kameleon-assistant-plugin": "dev-latest",
+    "aderaaij/wp-headless-theme": "dev-latest"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
