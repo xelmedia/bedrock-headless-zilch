@@ -47,7 +47,7 @@
         "name": "kameleon/kameleon-assistant-plugin",
         "version": "dev-latest",
         "dist": {
-          "url": "https://gitlab.xel.nl/chameleon/kameleon-assistant-plugin/-/archive/latest/kameleon-assistant-plugin-latest.zip",
+          "url": "https://github.com/xelmedia/kameleon-assistant-plugin-zip/releases/download/1.4.4.595/zilch-assistant.zip",
           "type": "zip"
         },
         "type": "wordpress-plugin"

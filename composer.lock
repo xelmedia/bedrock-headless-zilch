@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "720fa93dd366d44d5cd6aeebbacbb4a9",
+    "content-hash": "5e846bf6fa118859b65e207184e6063c",
     "packages": [
         {
             "name": "aderaaij/wp-headless-theme",
@@ -228,7 +228,7 @@
             "version": "dev-latest",
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.xel.nl/chameleon/kameleon-assistant-plugin/-/archive/latest/kameleon-assistant-plugin-latest.zip"
+                "url": "https://github.com/xelmedia/kameleon-assistant-plugin-zip/releases/download/1.4.4.595/zilch-assistant.zip"
             },
             "type": "wordpress-plugin"
         },
@@ -2054,7 +2054,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "kameleon/kameleon-assistant-plugin": 20,
+        "aderaaij/wp-headless-theme": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": true,
