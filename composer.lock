@@ -4,17 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e846bf6fa118859b65e207184e6063c",
+    "content-hash": "47e0d3885cef88bc69fa85684e39c948",
     "packages": [
-        {
-            "name": "aderaaij/wp-headless-theme",
-            "version": "dev-latest",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/xelmedia/wp-headless-theme/archive/refs/tags/1.0.zip"
-            },
-            "type": "wordpress-theme"
-        },
         {
             "name": "composer/installers",
             "version": "v2.3.0",
@@ -2054,7 +2045,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "aderaaij/wp-headless-theme": 20,
+        "kameleon/kameleon-assistant-plugin": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": true,

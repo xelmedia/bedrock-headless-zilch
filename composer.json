@@ -32,22 +32,10 @@
     {
       "type": "package",
       "package": {
-        "name": "aderaaij/wp-headless-theme",
-        "version": "dev-latest",
-        "dist": {
-          "url": "https://github.com/xelmedia/wp-headless-theme/archive/refs/tags/1.0.zip",
-          "type": "zip"
-        },
-        "type": "wordpress-theme"
-      }
-    },
-    {
-      "type": "package",
-      "package": {
         "name": "kameleon/kameleon-assistant-plugin",
         "version": "dev-latest",
         "dist": {
-          "url": "https://github.com/xelmedia/kameleon-assistant-plugin-zip/releases/download/1.4.4.595/zilch-assistant.zip",
+          "url": "https://github.com/xelmedia/kameleon-assistant-plugin-zip/releases/download/latest/zilch-assistant.zip",
           "type": "zip"
         },
         "type": "wordpress-plugin"
@@ -64,8 +52,7 @@
     "roots/wordpress": "*",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.2.0",
-    "kameleon/kameleon-assistant-plugin": "dev-latest",
-    "aderaaij/wp-headless-theme": "dev-latest"
+    "kameleon/kameleon-assistant-plugin": "dev-latest"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
