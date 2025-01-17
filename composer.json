@@ -32,7 +32,7 @@
     {
       "type": "package",
       "package": {
-        "name": "kameleon/kameleon-assistant-plugin",
+        "name": "zilch/zilch-assistant",
         "version": "dev-latest",
         "dist": {
           "url": "https://github.com/xelmedia/kameleon-assistant-plugin-zip/releases/download/latest/zilch-assistant.zip",
@@ -52,7 +52,7 @@
     "roots/wordpress": "*",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.2.0",
-    "kameleon/kameleon-assistant-plugin": "dev-latest"
+    "zilch/zilch-assistant": "dev-latest"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
@@ -72,7 +72,7 @@
     "installer-paths": {
       "web/app/mu-plugins/{$name}/": [
         "type:wordpress-muplugin",
-        "kameleon/kameleon-assistant-plugin"
+        "zilch/zilch-assistant"
       ],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]

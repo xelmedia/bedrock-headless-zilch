@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "47e0d3885cef88bc69fa85684e39c948",
+    "content-hash": "ccc7fb76fd8cba30e51c2191f98fbb84",
     "packages": [
         {
             "name": "composer/installers",
@@ -213,15 +213,6 @@
                 }
             ],
             "time": "2024-07-20T21:45:45+00:00"
-        },
-        {
-            "name": "kameleon/kameleon-assistant-plugin",
-            "version": "dev-latest",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/xelmedia/kameleon-assistant-plugin-zip/releases/download/latest/zilch-assistant.zip"
-            },
-            "type": "wordpress-plugin"
         },
         {
             "name": "oscarotero/env",
@@ -1114,6 +1105,15 @@
                 }
             ],
             "time": "2024-07-20T21:52:34+00:00"
+        },
+        {
+            "name": "zilch/zilch-assistant",
+            "version": "dev-latest",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/xelmedia/kameleon-assistant-plugin-zip/releases/download/latest/zilch-assistant.zip"
+            },
+            "type": "wordpress-plugin"
         }
     ],
     "packages-dev": [
@@ -2056,7 +2056,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "kameleon/kameleon-assistant-plugin": 20,
+        "zilch/zilch-assistant": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": true,
