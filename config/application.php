@@ -13,8 +13,8 @@ use Roots\WPConfig\Config;
 
 use function Env\env;
 
-// USE_ENV_ARRAY + CONVERT_* + STRIP_QUOTES
-Env\Env::$options = 31;
+// CONVERT_* + STRIP_QUOTES
+Env\Env::$options = 15;
 
 /**
  * Directory containing all of the site's files
@@ -127,9 +127,6 @@ Config::define('ZILCH_PRODUCTION_HOST', env('ZILCH_PRODUCTION_HOST') ?? '');
 Config::define('ZILCH_STAGING_HOST', env('ZILCH_STAGING_HOST') ?? '');
 Config::define('ZILCH_GATEWAY_HOST', env('ZILCH_GATEWAY_HOST') ?? '');
 Config::define('ZILCH_CLIENT_SECRET', env('ZILCH_CLIENT_SECRET') ?? '');
-
-// Set default theme to headless wp
-Config::define('WP_DEFAULT_THEME', 'wp-headless-theme');
 
 // Disable the plugin and theme file editor in the admin
 Config::define('DISALLOW_FILE_EDIT', true);
